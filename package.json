@@ -1,0 +1,22 @@
+{
+  "name": "try-bcg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "truffle compile --all",
+    "postbuild": "node scripts/generate-ts-from-abis.js",
+    "test": "truffle test",
+    "deploy": "truffle migrate --reset"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "ohm-js": "^16.3.4",
+    "shelljs": "^0.8.5",
+    "truffle": "^5.5.17"
+  }
+}
